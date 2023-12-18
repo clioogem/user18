@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <script src="https://kit.fontawesome.com/b88c8e02ca.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins&family=Roboto+Mono:wght@500&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 15px;
+            width: 20%;
+            height: 100vh;
+        }
+
+        .hoslogo img {
+              height: 200px;
+              width: 200px;
+              margin-left: 16%;
+        }
+
+        .menulink {
+              list-style: none;
+              padding: 0;
+              margin-top: 10px;
+        }
+
+        .menulink a {
+              text-decoration: none;
+              color: white;
+              display: block;
+              padding: 10px;
+              margin-bottom: 10px;
+              border-radius: 5px;
+              transition: background-color 0.3s;
+        }
+        .menulink i {
+              padding-right: 10px;
+              text-align: left;
+        }
+
+        .menulink a:hover {
+              background-color: #40916c;
+        }
+
+
+        .maincontent {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .widgetcontainer {
+            display: flex;
+            gap: 20px;
+        }
+
+        .widgettype {
+            flex-grow: 1;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .widgettype h2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .forsearch {
+            margin-bottom: 20px;
+            margin-top: 5%;
+        }
+
+        .searchtype {
+            padding: 10px;
+            font-size: 16px;
+            width: 70%;
+        }
+
+        .searchbutton {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submitbutton {
+            padding: 8px 12px;
+            font-size: 14px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .table {
+            margin-top: 5%;
+            background-color: #fff;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+        <div class="hoslogo">
+             <img src="image/partner7.png" alt="Hospital Logo">
+        </div>
+    <ul class="menulink">
+      <li><a href="instdashboard.html"><i class="fa-solid fa-grip-vertical"></i>Dashboard</a></li>
+      <li><a href="instsearch.html"><i class="fa-solid fa-bed"></i>Patients</a></li>
+      <li><a href="instappt.html"><i class="fa-solid fa-calendar"></i>Appointments</a></li>
+      <li><a href="#"><i class="fa-solid fa-sitemap"></i></i>Directory</a></li>
+      <li><a href="instlab.html"><i class="fas fa-flask"></i>Lab Status</a></li>
+      <li><a href="instexport.html"><i class="fa-solid fa-file-arrow-up"></i>Send Records</a></li>
+      <li><a href="instrequest.html"><i class="fa-solid fa-file-arrow-down"></i>Request Records</a></li>
+      <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i>Help</a></li>
+      <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sign Out</a></li>
+    </ul>
+  </aside>
+
+        <div class="maincontent">
+            <div class="widgetcontainer">
+                <div class="widgettype">
+                    <h2>Today <span>(3)</span></h2>
+                </div>
+
+                <div class="widgettype">
+                    <h2>Upcoming <span>(5)</span></h2>
+                </div>
+
+                <div class="widgettype">
+                    <h2>Total <span>(502)</span></h2>
+                </div>
+            </div>
+
+
+            <div class="forsearch">
+                <input type="text" class="searchtype" placeholder="Search for a test...">
+                <button id="searchbutton">Search</button>
+            </div>
+
+            <div class="table">
+                <h2>Appointment Schedule</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Type</th>
+                            <th>Appointment Form</th>
+                            <th>Assign To</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Natasha Rizal</td>
+                            <td>January 1, 2024</td>
+                            <td>8:00</td>
+                            <td>Physical Exam</td>
+                            <td><button class="submitbutton">View Form</button></td>
+                            <td><button class="submitbutton">Assign</button></td>
+                        </tr>
+                        <tr>
+                            <td>Evelyn Hugo</td>
+                            <td>December 20, 2023</td>
+                            <td>13:00</td>
+                            <td>Eye Check-up</td>
+                            <td><button class="submitbutton">View Form</button></td>
+                            <td><button class="submitbutton">Assign</button></td>
+                        </tr>
+                        <tr>
+                            <td>Maureen Wroblewitz</td>
+                            <td>January 5, 2024</td>
+                            <td>11:00</td>
+                            <td>Hearing Test</td>
+                            <td><button class="submitbutton">View Form</button></td>
+                            <td><button class="submitbutton">Assign</button></td>
+                        </tr>
+                        <tr>
+                            <td>Zeinab Harake</td>
+                            <td>December 25, 2023</td>
+                            <td>16:00</td>
+                            <td>Skin Check-up</td>
+                            <td><button class="submitbutton">View Form</button></td>
+                            <td><button class="submitbutton">Assign</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

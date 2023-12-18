@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="instdashboardStyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b88c8e02ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!--------Sidebar------------>
+  <aside class="sidebar">
+    <div class="hoslogo">
+      <img src="image/partner7.png" alt="Hospital Logo">
+    </div>
+    <ul class="menulink">
+      <li><a href="instdashboard.html"><i class="fa-solid fa-grip-vertical"></i>Dashboard</a></li>
+      <li><a href="instsearch.html"><i class="fa-solid fa-bed"></i>Patients</a></li>
+      <li><a href="instappt.html"><i class="fa-solid fa-calendar"></i>Appointments</a></li>
+      <li><a href="#"><i class="fa-solid fa-sitemap"></i></i>Directory</a></li>
+      <li><a href="instlab.html"><i class="fas fa-flask"></i>Lab Status</a></li>
+      <li><a href="instexport.html"><i class="fa-solid fa-file-arrow-up"></i>Send Records</a></li>
+      <li><a href="instrequest.html"><i class="fa-solid fa-file-arrow-down"></i>Request Records</a></li>
+      <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i>Help</a></li>
+      <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sign Out</a></li>
+    </ul>
+  </aside>
+
+<!------Main Content----------->
+  <section class="mainpage">
+    <header>
+      <div class="forsearch">
+        <input type="text" placeholder="Search..." class="searchbar">
+        <select>
+          <option value="all">Department</option>
+          <option value="department">Casualty</option>
+          <option value="department">Burns Unit</option>
+          <option value="department">Cardiology</option>
+          <option value="department">ICU</option>
+          <option value="department">Departments</option>
+          <option value="department">Gynecology</option>
+          <option value="department">Obstetrics</option>
+          <option value="department">Pediatrics</option>
+          <option value="department">Psychiatry</option>
+        </select>
+        <select>
+          <option value="all">Date</option>
+          <option value="date">January</option>
+          <option value="date">February</option>
+          <option value="date">March</option>
+          <option value="date">April</option>
+          <option value="date">June</option>
+          <option value="date">July</option>
+          <option value="date">August</option>
+          <option value="date">September</option>
+          <option value="date">October</option>
+          <option value="date">November</option>
+          <option value="date">December</option>
+        </select>
+        <select>
+          <option value="all">Condition</option>
+          <option value="condition">All</option>
+          <option value="condition">Recovering</option>
+          <option value="condition">Stable</option>
+          <option value="condition">Critical</option>
+        </select>
+        <select>
+          <option value="all">Status</option>
+          <option value="status">All</option>
+          <option value="status">Outpatient</option>
+          <option value="status">Inpatient</option>
+        </select>
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </header>
+
+    <div class="samplewidgets">
+      <div class="widget">
+        <h3>Patients Today</h3>
+        <p class="numbers">92</p>
+      </div>
+      <div class="widget">
+        <h3>Total Patients</h3>
+        <p class="numbers">515</p>
+      </div>
+      <div class="widget">
+        <h3>Practitioners</h3>
+        <p class="numbers">20</p>
+      </div>
+      <div class="widget">
+        <h3>Lab Technicians</h3>
+        <p class="numbers">8</p>
+      </div>
+      <div class="widget">
+        <h3>Records Sent</h3>
+        <p class="numbers">120</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

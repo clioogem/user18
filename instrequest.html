@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export File</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins&family=Roboto+Mono:wght@500&display=swap');
+
+        body {
+            font-family: 'Roboto Mono', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a3b18a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        button {
+            font-family: 'Roboto Mono', sans-serif;
+        }
+
+        .requestform {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 10%;
+            width: 500px;
+        }
+
+        .button {
+            background-color: #588157;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 3%;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px 0;
+            color: #588157
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h3, h2 {
+            color: #588157;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="requestform">
+        <h2>Request File</h2>
+        <label for="fileName">Patient Name:</label>
+        <input type="text" id="fileName" placeholder="Enter patient name">
+
+        <label for="fileType">Notes:</label>
+        <input type="text" id="fileType" placeholder="Enter message">
+
+        <h3>Requester's Information</h3>
+        <label for="senderName">Name:</label>
+        <input type="text" id="senderName" placeholder="Enter your name">
+
+        <label for="senderHospital">Requested by:</label>
+        <input type="text" id="senderHospital" placeholder="Enter hospital/clinic/practitioner name">
+
+        <label for="senderHospital">Requester's ID Number:</label>
+        <input type="text" id="senderHospital" placeholder="Enter ID number">
+
+
+        <button class="button" onclick="goBack()">Go Back</button>
+        <button class="button" onclick="exportform()">Export</button>
+        
+    </div>
+
+    <script>
+        function exportform() {
+            alert('Export successful!');
+        }
+        function goBack() {
+
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="loginstyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="loginbox">
+    <div class="usertype">
+      <button id="institution">For Institutions</button>
+      <button id="practitioner">For Practitioners</button>
+      <button id="patient">For Patients</button>
+    </div>
+
+<!----------Institution----------->
+
+    <div id="institutionform" class="forms" style="display: none;">
+      <h2>Institution Login</h2>
+      <form action="instloginProcess" method="post">
+        <label for="hospitalId">Hospital/Clinic ID:</label>
+        <input type="text" id="hospitalId" name="hospitalId" required>
+        <label for="accessCode">Access Code:</label>
+        <input type="text" id="accessCode" name="accessCode" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <button type="submit" class="submitbutton"><a href="instdashboard.html">Login</a></button> 
+      </form>
+    </div>
+
+<!------------Practitioner-------->
+
+    <div id="practitionerForm" class="forms" style="display: none;">
+      <h2>Practitioner Login</h2>
+      <form action="practloginProcess" method="post">
+        <label for="licenseNumber">License Number:</label>
+        <input type="text" id="licenseNumber" name="licenseNumber" required>
+        <label for="accessCodePractitioner">Access Code:</label>
+        <input type="text" id="accessCodePractitioner" name="accessCodePractitioner" required>
+        <label for="passwordPractitioner">Password:</label>
+        <input type="password" id="passwordPractitioner" name="passwordPractitioner" required>
+        <br><br>
+        <button type="submit" class="submitbutton"><a href="practdashboard.html">Login</a></button>
+      </form>
+    </div>
+
+<!------------Patient----------->
+
+    <div id="patientForm" class="forms" style="display: none;">
+      <h2>Patient Login</h2>
+      <form action="patientloginProcess" method="post">
+        <label for="patientId">Patient ID:</label>
+        <input type="text" id="patientId" name="patientId" required>
+        <label for="accessCodePatient">Access Code:</label>
+        <input type="text" id="accessCodePatient" name="accessCodePatient" required>
+        <label for="passwordPatient">Password:</label>
+        <input type="password" id="passwordPatient" name="passwordPatient" required>
+        <br><br>
+        <button type="submit" class="submitbutton"><a href="patientdashboard.html">Login</a></button>
+      </form>
+    </div>
+
+<!------------Registration----------->
+
+    <div class="reglink">
+      <p>Don't have an account? <a href="registrationform.html" class="regbutton">Register here</a></p>
+    </div>
+  </div>
+
+  <script src="loginfunc.js"></script>
+
+</body>
+</html>

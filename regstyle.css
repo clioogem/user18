@@ -1,0 +1,79 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins&family=Roboto+Mono:wght@500&display=swap');
+
+
+
+html, body {
+  margin-top: 10%;
+  padding: 0;
+
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a3b18a;
+  font-family: 'Poppins', sans-serif; 
+}
+button {
+  font-family: 'Poppins', sans-serif; 
+}
+
+.registration {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.usertype {
+      margin-bottom: 20px;
+    }
+
+.usertype button {
+      background-color: #588157;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+.usertype button:hover {
+      background-color: #a3b18a;
+    }
+
+.forms {
+      margin-bottom: 20px;
+    }
+
+.forms label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+.forms input, .forms textarea, .forms select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+.submitbutton {
+      background-color: #588157;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+.loginbutton {
+      color: #588157;
+      cursor: pointer;
+    }

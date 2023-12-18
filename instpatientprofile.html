@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Profile</title>
+    <script src="https://kit.fontawesome.com/b88c8e02ca.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins&family=Roboto+Mono:wght@500&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #588157;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #a3b18a;
+            color: #fff;
+            padding: 8px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            line-height: 2;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #40916c;
+        }
+
+        .profile {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #FAF9F6;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            gap: 30px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .container {
+            margin-bottom: 20px;
+        }
+
+        .category {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .data {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Patient 1</h1>
+    </header>
+
+    <nav>
+        <a onclick="goBack()">Back</a>
+        <a href="instexport.html">Send Records</i></a>
+    </nav>
+
+    <div class="profile">
+
+        <div class="container">
+            <div class="category">Basic Information</div>
+            <div class="data">
+                <p><b>Control Number:</b> 01234567889</p>
+                <p><b>Age:</b> 35</p>
+                <p><b>Gender:</b> Male</p>
+                <p><b>Condition:</b> Recovering</p>
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="container">
+            <div class="category">Diagnosis</div>
+            <div class="data">
+                <p><b>Diagnosis:</b> Early On-set Dementia</p>
+                <p><b>Date:</b> December 3, 2023</p>
+                <p><b>Physician:</b> Dr. Kalix Martinez</p>
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="container">
+            <div class="category">Prescriptions</div>
+            <div class="data">
+                <p><b>Generic Name:</b> Donepezil</p>
+                <p><b>Brand Name:</b> Aricept</p>
+                <p><b>Dose:</b> After each meal, take one tablet twice a day.</p>
+                <p><b>Date:</b> December 3, 2023</p>
+                <p><b>Prescribed By:</b> Dr. Kalix Martinez</p>
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="container">
+            <div class="category">Allergies</div>
+            <div class="data">
+                <p><b>Food Allergy:</b> Seafoods</p>
+                <p><b>Drug Allergy:</b> None</p>
+                <p><b>Skin Allergy:</b> None</p>
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="container">
+            <div class="category">Vital Signs History</div>
+            <div class="data">
+                <p><b>Date:</b> December 1, 2023</p>
+                <p>Weight: 80.1kg</p>
+                <p>Temperature: 100.5</p>
+                <p>Blood Pressure: 121/80</p>
+                <p>Pulse: 81</p>
+                <p>Respiration: 16</p>
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="container">
+            <div class="category">Medical History</div>
+            <div class="data">
+                <p><b>Childhood</b></p>
+                <p>Illness: Measles and Chickenpox</p>
+                <p><b>Immunizations:</b></p>
+                <p>Vaccine: Tetanus (1998), Flu Vaccine (2021)</p>
+                <p><b>Adult</b></p>
+                <p>Illness: Kidney Infection</p>
+                <p>Medication: Ampicillin</p>
+                <p><b>Psychiatric</b></p>
+                <p>Illness: None</p>
+                <p><b>Hospitalizations</b></p>
+                <p>Surgery: None</p>
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="container">
+            <div class="category">Family History</div>
+            <div class="data">
+                <p><b>Mother</b></p>
+                <p>Vital Status: Deceased</p>
+                <p>Cause of Death: Stroke</p>
+                <p>Age: 60</p>
+                <p><b>Father</b></p>
+                <p>Vital Status: Alive</p>
+                <p>Illness: Alzheimer's Disease</p>
+                <p>Age: 71</p>
+               </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="container">
+            <div class="category">Insurance</div>
+            <div class="data">
+                <p><b>Insurance Provider:</b> PhilHealth</p>
+                <p><b>Policy Number:</b> 123456789</p>
+                <p><b>Group Number:</b> 987654321</p>
+                <p><b>Expiration Date:</b> December 31, 2024</p>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    function goBack() {
+            window.history.back();
+        }
+</script>
+</body>
+</html>

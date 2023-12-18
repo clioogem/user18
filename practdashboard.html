@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="instdashboardStyle.css">
+  <script src="https://kit.fontawesome.com/b88c8e02ca.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins&family=Roboto+Mono:wght@500&display=swap');
+
+        body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .sidebar {
+        background-color: #2d6a4f;
+        color: white;
+        padding: 15px;
+        width: 20%;
+        height: 100vh;
+      }
+
+      .hoslogo img {
+        height: 200px;
+        width: 200px;
+        margin-left: 16%;
+      }
+
+      .menulink {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      .menulink a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .menulink i {
+        padding-right: 10px;
+        text-align: left;
+      }
+
+      .menulink a:hover {
+        background-color: #40916c;
+      }
+
+      .mainpage {
+        margin-left: 21%;
+        padding: 20px;
+        margin-top: -49%;
+      }
+
+      header {
+        background-color: #fff;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+      }
+      .forsearch {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5%;
+      }
+
+      .searchbar {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        flex: 1;
+      }
+
+      select {
+        margin-left: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      button {
+        padding: 10px;
+        background-color: #40916c;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 1%;
+      }
+
+      .dashboard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        }
+
+      .dashboarditem {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        }
+
+      .widget {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #eee;
+        border-radius: 6px;
+        }
+
+</style>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="hoslogo">
+      <img src="image/partner5.png" alt="Hospital Logo">
+    </div>
+    <ul class="menulink">
+      <li><a href="practdashboard.html"><i class="fa-solid fa-grip-vertical"></i>Dashboard</a></li>
+      <li><a href="practsearch.html"><i class="fa-solid fa-bed"></i>Patients</a></li>
+      <li><a href="#"><i class="fa-solid fa-medkit"></i>Pharmacy</a></li>
+      <li><a href="#"><i class="fas fa-flask"></i>Laboratory</a></li>
+      <li><a href="practappt.html"><i class="fa-solid fa-file-arrow-up"></i>Appointment</a></li>
+      <li><a href="instrequest.html"><i class="fa-solid fa-file-arrow-down"></i>Request Records</a></li>
+      <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i>Help</a></li>
+      <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sign Out</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <section class="mainpage">
+    <header>
+      <div class="forsearch">
+        <input type="text" placeholder="Search..." class="searchbar">
+        <select>
+          <option value="all">All</option>
+          <option value="all">Patient</option>
+          <option value="all">Pharmacy</option>
+        </select>
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </header>
+
+    <div class="dashboard">
+        <div class="dashboarditem">
+            <h3>Patient</h3>
+            <p>Latest: Mr. John Doe, 40, Check-up</p>
+        </div>
+
+        <div class="dashboarditem">
+            <h3>Surgery</h3>
+            <p>Thu, Dec 21, 2023</p>
+        </div>
+
+        <div class="dashboarditem">
+            <h3>E-Prescription</h3>
+            <p>Last Issued: Mr. John Doe</p>
+        </div>
+
+        <div class="dashboarditem">
+            <h3>Laboratory</h3>
+            <p>Last Updated: 5 days ago</p>
+        </div>
+        <div class="dashboarditem">
+            <h3>Appointments</h3>
+            <p>Thu, Dec 21, 2023</p>
+            <!-- Include content for appointments here -->
+        </div>
+        <div class="dashboarditem">
+            <h3>Record Requests</h3>
+            <p>Status: Pending</p>
+        </div>
+    </div>
+  </section>
+
+</body>
+</html>

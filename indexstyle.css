@@ -1,0 +1,501 @@
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins&family=Roboto+Mono:wght@500&display=swap');
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0; 
+  font-family: 'Crimson Pro', serif;
+
+}
+
+body {
+  background-color: #dad7cd;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/*----- HEADER CSS ----------*/
+header {
+      color: white;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+  }
+.pagelogo {
+	float: left;
+}
+#logo1 {
+	width: 130px;
+	height: 55px;
+	padding-left: 10px;
+}
+button {
+	margin-top: 2%;
+	padding: 15px 35px;
+	background-color: #A3B18A;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+  font-size: 15px
+  margin-right:10%;
+  font-weight: bold;
+}
+a button:hover, {
+  background-color: #588157;
+}
+
+/*------NAVIGATION CSS---------*/
+
+nav {
+      background-color: #2d6a4f;
+      display: inline-box;
+      color: white;
+      padding: 10px;
+    }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #40916c;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a button {
+	font-family:
+	font-weight:
+	font-size: 
+	color: #A3B18A;
+	text-decoration: none;
+}
+
+nav ul li a{
+  color: white;
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #2d6a4f;
+}
+
+/*------------ SLIDESHOW CSS ----------*/
+
+.slideshow-container {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  float: left;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: auto;
+  animation: fade 2s ease-out infinite;
+}
+
+.imageslide {
+  width: 900px; 
+  height: 551px;
+}
+.read-more {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #a3b18a;
+  color: white;
+  border: 1px white;
+  border-radius: 50%;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/*--------WELCOME MESSAGE--------*/
+
+.welcome {
+    padding: 10px;
+    background-color: #dae0d0; 
+    border-radius: 20px;
+    height: 200px;
+    width: 615px;
+}
+
+.textsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    height: 551px;
+}
+
+@keyframes fadeIn {
+ from {
+    opacity: 0;
+ }
+
+ to {
+    opacity: 1;
+ }
+}
+
+.textsection {
+ animation: fadeIn 1s forwards;
+ opacity: 0;
+}
+
+.welcome h1 {
+  font-family: 'Roboto Mono', monospace; 
+  font-size: 55px;
+  color: #344e41;
+}
+.welcometext p {
+  font-size: 20px;
+  margin-top: 5%
+}
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6%;
+    margin-left: 7%;
+}
+.col{
+    flex-basis: 80%;
+    text-align: center;
+    color: #555;
+}
+.counter-box{
+    width: 80%;
+    height: 80%;
+    background: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px -4px #66676c;
+    border-bottom: 10px solid #66676c;
+}
+h2,span{
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 50px;
+    color: #000;
+}
+.counter-box .fa{
+    font-size: 40px;
+    color: #344e41;
+    display: block;
+}
+
+/*----------FEATURES----------*/
+
+.ftitle {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 60px;
+  letter-spacing: 5px;
+  margin-top: 10%
+}
+
+.fcolumn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: center;
+  margin-top: 5%;
+
+}
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 400px;
+}
+
+.card:hover {
+  background-color: #dae0d0;
+}
+.icon {
+  font-size: 55px;
+  margin-bottom: 10%;
+  text-align: left;
+  margin-left: 3%;
+  padding-top: 1%;
+  color: #344e41;
+  text-shadow: 2px 2px #999175;
+
+}
+.flabel {
+  font-size: 40px;
+  color: #588157;
+  margin-bottom: 2%;
+  margin-top: -29%;
+  margin-left: 25%;
+  text-align: left;
+}
+.ftext {
+  color: #344e41;
+  font-size: 19px;
+  line-height: 15px;
+  padding-bottom: 15px;
+  margin-top: 12%;
+}
+
+
+/*-------ABOUT US---------*/
+
+.aboutus {
+    background-color: #dad7cd;
+    margin-top: 10%;
+}
+.abtitle {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 50px;
+    margin-left: 43%;
+    margin-top: 3%;
+}
+.aboutsection {
+  border: 5px solid #588157;
+}
+
+.abcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.absection {
+    flex: 1;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 10%
+}
+
+.absection:hover {
+  background-color: #b6b09c;
+}
+
+.absection h3 {
+    margin-bottom: 5%;
+}
+
+.absection p {
+    margin-top: 5%;
+    font-size: 17px;
+    color: black;
+}
+
+.ablabel {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 3%;
+    margin-top: 15%;
+}
+
+.abtext {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+
+/*-------OUR PARTNERS---------*/
+
+.ourpartners h1 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin: 13% 0 50px 0;
+  border: 2px solid #588157;
+}
+
+.slider {
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+  display: inline-flex;
+  padding: 15px;
+ overflow: hidden;
+ background: #dad7cd;
+ box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px ;
+}
+.slidelogo {
+  animation: animate 15s alternate linear infinite;
+}
+.logoslider {
+  width: 300px;
+  height: 300px;
+}
+.slider::hover .item {
+  animation-play-state: paused; 
+}
+@keyframes animate{
+  0%{
+    transform: translate3d(0. 0. 0);
+  }
+  100%{
+    transform: translate3d(-1000px, 0, 0);
+  }
+} 
+
+/*----------NEWS AND UPDATES--------------*/
+
+.bsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: #a3b18a;
+}
+
+.btitle h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.bcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+}
+.bbox {
+  width: 350px;
+  height: 348px;
+  background-color: white;
+  border: 1px solid black; 
+  margin: 20px;
+}
+.bimage {
+  width: 100%;
+  height: auto;
+}
+.blogimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.blogtext {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.blogtext p {
+  color: #3a5a40;
+  font-size: 15px;
+}
+.blogtext a {
+  color: #3a5a40;
+  font-size: 35px;
+  margin-top: 3%;
+}
+
+/*-------FOOTER-----------*/
+
+footer {
+  background-color: #dad7cd;
+  padding: 30px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px ;
+}
+.linkcontainer {
+  justify-content: left;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  font-size: 19px
+}
+.quicklinks .account {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 5%
+}
+.quicklinks {
+    margin-right: 5%;
+}
+.footerql {
+  list-style-type: none;
+  text-align: left;
+  text-decoration: none;
+}
+.footerql li a {
+  list-style-type: none;
+  text-align: left;
+  text-decoration: none;
+  color: #588157;
+}
+.footitle {
+  text-align: left;
+  color: #3a5a40;
+}
+.horizontal-section {
+  margin-top: 20px;
+}
+.flogosec img {
+  float: right;
+}
+.flogo {
+  max-width: 300px;
+  margin-top: -12%;
+}
+.sociallinks i{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.socialicons li  {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 1%;
+}
+.credits {
+  font-size: 12px;
+}
+.textbelow  {
+  text-align: center;
+  margin-left: 25%;
+  margin-top: 2%;
+  color: #588157;
+}
+.slogan {
+  font-size: 17px;
+  margin-bottom: 1%;
+}
